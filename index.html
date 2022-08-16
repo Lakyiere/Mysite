@@ -32,24 +32,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="#about_me" class="nav-link">About Me</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Blog</a>
+              <a href="#project" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Gallary</a>
+              <a href="#blog" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#gallary" class="nav-link">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-          <button class="btn btn-primary btn-lg">Sign In</button>
+          <button class="btn btn-md border border-primary text-light">Sign In</button>
         </div>
       </div>
     </nav>
@@ -74,32 +77,33 @@
               <br />
               learning to the mentorship of young women in the STEM sectors
             </p>
-            <small><span class="text-warning">Find out more</span> </small>
-            <i class="bi bi-arrow-right-circle"></i> <br /><br />
-            <button class="btn btn-primary btn-lg">Start the Enrollment</button>
+            
+            <button class="btn  btn-primary btn-lg">
+              Get to know me
+            </button>
           </div>
-          <img class="img-fluid w-50 d-none d-md-block pt-30" src="img/3.jpg" />
+          <img class="img-fluid w-50 d-none d-md-block pt-30 rounded" src="img/3.jpg" />
         </div>
       </div>
     </section>
-    <!-- cards -->
-    <section class="p-5 text-dark">
+    <!-- About Me -->
+    <section class="p-5 text-dark" id="about_me">
       <div class="container">
-        <div class="text-center pt-5">
+        <div class="text-center pt-3">
           <h3>My Expertise</h3>
-          <p>These are some of my Speciality and Fields of Interest</p>
+          <p>These are some of my Specialities and Fields of Interest</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-md-3 pt-3">
           <div class="col">
             <div class="card">
               <img src="img/web.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title text-center">Web Development</h5>
                 <p class="card-text">
-                  I have a 3+ months experience in Web development and has worked on
-                  great projects. I am building more projects and available to
-                  participate in other projects. I am a Dm away from being part of your 
-                  next project. Let's do this together.
+                  I have a 3+ months experience in Web development and has
+                  worked on great projects. I am building more projects and
+                  available to participate in other projects. I am a Dm away
+                  from being part of your next project. Let's do this together.
                 </p>
               </div>
             </div>
@@ -127,8 +131,9 @@
                 <p class="card-text">
                   I have contributed to a few projects and have successfully
                   designed some models of UI designs. I am still always
-                  available for more learnable projects. And now a frontend developer 
-                  who codes her UI designs. Let's do some great projects together.
+                  available for more learnable projects. And now a frontend
+                  developer who codes her UI designs. Let's do some great
+                  projects together.
                 </p>
               </div>
             </div>
@@ -136,8 +141,69 @@
         </div>
       </div>
     </section>
-    <!-- list group -->
-    <section class="bg-light">
+    <!-- Navs and tabs -->
+    <section class="p-5" id="project">
+      <div class="container">
+        <div class="text-center pt-3">
+          <h3>My Projects</h3>
+          <p>These are some projects I worked on in all aspects of my interest</p>
+        </div>
+        <!-- projects -->
+        <div class="p-3 col-12">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="web" data-bs-interval="2000">
+      <img src="img/wd.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="card-body bg-dark rounded-pill text-light opacity-75">
+    <h5 class="card-title">My Fashion Website</h5>
+    <p class="card-text"> This is a fashion website which gives the customer the various options to choose from.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+       </div>
+    </div>
+    <div class="carousel-item" id="ds" data-bs-interval="2000">
+      <img src="img/ds.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="card-body bg-dark rounded-pill text-light opacity-75">
+    <h5 class="card-title">Data Virtualization Project with Power BI</h5>
+    <p class="card-text">This project shows the graphical presentation of tracking the Metrics and KPIs of an Employee Dataset.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+        </div>
+    </div>
+    <div class="carousel-item" id="ui/ux" data-bs-interval="2000">
+      <img src="img/ux.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="card-body bg-dark rounded-pill text-light opacity-75">
+    <h5 class="card-title">An NFT Design</h5>
+    <p class="card-text">An NFT UI design for the transaction of bitcoin and other crytocurrency activities.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+        
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="bg-light p-5" id="blog">
       <div class="container-lg pb-4">
         <div class="text-center p-5">
           <h2>Blogs</h2>
@@ -191,7 +257,7 @@
     </section>
 
     <!--Accordion  -->
-    <section class="p-5">
+    <section class="p-5 pb-3">
       <div class="container-md">
         <div class="text-center">
           <h2>Frequently Asked Questions</h2>
@@ -226,7 +292,7 @@
                     My Professional goal is to attain my masters by 2024 and I
                     seek to achieve these by foremost developing myself,
                     gathering the requisite skills to shine in my chosen career
-                    field of database management by obtaining a PhD by 2028 and
+                    field of Machine Learning and AI by obtaining a PhD by 2029 and
                     reflecting its relevance to community development.
                   </div>
                 </div>
@@ -342,14 +408,14 @@
       </div>
     </section>
     <!-- Gallary -->
-    <section class="p-5">
+    <section class="p-5" id="gallary">
       <div class="container">
-        <div class="gallary gallary-contain">
-          <div class="text-center">
+        <div class="gallary gallary-cover">
+          <div class="text-center pt-4">
             <h2>Gallary</h2>
             <p>Get to know me more, and add me to your friends.</p>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4 pt-2">
             <div class="col">
               <div class="card">
                 <img src="img/gal6.jpeg" class="card-img-top" alt="..." />
