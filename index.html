@@ -52,7 +52,8 @@
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-          <button class="btn btn-md border border-primary text-light">
+          <button class="btn btn-md border border-primary text-light" data-bs-toggle="modal"
+              data-bs-target="#Modal">
             Sign In
           </button>
         </div>
@@ -628,7 +629,8 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Welcome! Sign in for more interactions</h5>
+            
             <button
               type="button"
               class="btn-close"
@@ -654,7 +656,7 @@
               />
               <br />
               <input
-                type="email"
+                type="text"
                 id="form5Example21"
                 placeholder="Whatsapp Contact"
                 class="form-control"
@@ -678,7 +680,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-success">Sumit</button>
+            <button type="button" class="btn btn-success">Submit</button>
           </div>
         </div>
       </div>
