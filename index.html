@@ -32,7 +32,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto ">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
@@ -52,7 +52,9 @@
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-          <button class="btn btn-md border border-primary text-light">Sign In</button>
+          <button class="btn btn-md border border-primary text-light">
+            Sign In
+          </button>
         </div>
       </div>
     </nav>
@@ -64,7 +66,7 @@
         <div
           class="align-items-center justify-content-between d-flex flex-col flex-lg-row mt-5"
         >
-          <div class="mt-5">
+          <div class="p-5">
             <h1 class="">
               Who I am as<span class="text-warning">
                 Lakyiere Alice Bagyiereyele
@@ -77,12 +79,19 @@
               <br />
               learning to the mentorship of young women in the STEM sectors
             </p>
-            
-            <button class="btn  btn-primary btn-lg">
+
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#Modal"
+            >
               Get to know me
             </button>
           </div>
-          <img class="img-fluid w-50 d-none d-md-block pt-30 rounded" src="img/3.jpg" />
+          <img
+            class="img-fluid w-50 d-none d-md-block pt-30 rounded"
+            src="img/3.jpg"
+          />
         </div>
       </div>
     </section>
@@ -146,58 +155,117 @@
       <div class="container">
         <div class="text-center pt-3">
           <h3>My Projects</h3>
-          <p>These are some projects I worked on in all aspects of my interest</p>
+          <p>
+            These are some projects I worked on in all aspects of my interest
+          </p>
         </div>
         <!-- projects -->
         <div class="p-3 col-12">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" id="web" data-bs-interval="2000">
-      <img src="img/wd.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <div class="card-body bg-dark rounded-pill text-light opacity-75">
-    <h5 class="card-title">My Fashion Website</h5>
-    <p class="card-text"> This is a fashion website which gives the customer the various options to choose from.</p>
-    <a href="#" class="btn btn-primary">Read More</a>
-  </div>
-       </div>
-    </div>
-    <div class="carousel-item" id="ds" data-bs-interval="2000">
-      <img src="img/ds.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <div class="card-body bg-dark rounded-pill text-light opacity-75">
-    <h5 class="card-title">Data Virtualization Project with Power BI</h5>
-    <p class="card-text">This project shows the graphical presentation of tracking the Metrics and KPIs of an Employee Dataset.</p>
-    <a href="#" class="btn btn-primary">Read More</a>
-  </div>
-        </div>
-    </div>
-    <div class="carousel-item" id="ui/ux" data-bs-interval="2000">
-      <img src="img/ux.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <div class="card-body bg-dark rounded-pill text-light opacity-75">
-    <h5 class="card-title">An NFT Design</h5>
-    <p class="card-text">An NFT UI design for the transaction of bitcoin and other crytocurrency activities.</p>
-    <a href="#" class="btn btn-primary">Read More</a>
-  </div>
-        
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                id="web"
+                data-bs-interval="2000"
+              >
+                <img src="img/wd.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="card-body bg-dark rounded-pill text-light opacity-75"
+                  >
+                    <h5 class="card-title">My Fashion Website</h5>
+                    <p class="card-text">
+                      This is a fashion website which gives the customer the
+                      various options to choose from.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" id="ds" data-bs-interval="2000">
+                <img src="img/ds.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="card-body bg-dark rounded-pill text-light opacity-75"
+                  >
+                    <h5 class="card-title">
+                      Data Virtualization Project with Power BI
+                    </h5>
+                    <p class="card-text">
+                      This project shows the graphical presentation of tracking
+                      the Metrics and KPIs of an Employee Dataset.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" id="ui/ux" data-bs-interval="2000">
+                <img src="img/ux.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="card-body bg-dark rounded-pill text-light opacity-75"
+                  >
+                    <h5 class="card-title">An NFT Design</h5>
+                    <p class="card-text">
+                      An NFT UI design for the transaction of bitcoin and other
+                      crytocurrency activities.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -292,8 +360,8 @@
                     My Professional goal is to attain my masters by 2024 and I
                     seek to achieve these by foremost developing myself,
                     gathering the requisite skills to shine in my chosen career
-                    field of Machine Learning and AI by obtaining a PhD by 2029 and
-                    reflecting its relevance to community development.
+                    field of Machine Learning and AI by obtaining a PhD by 2029
+                    and reflecting its relevance to community development.
                   </div>
                 </div>
               </div>
@@ -450,7 +518,171 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white" id="contact">
+      <div class="text-center pt-4">
+        <h2>Contact</h2>
+        <hr />
+      </div>
+      <form action="" class="pt-5">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
 
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline-light bg-dark mb-4">
+              <input
+                type="email"
+                id="form5Example21"
+                placeholder="Email address"
+                class="form-control form-outline-light bg-dark text-light"
+              />
+              <!-- <label class="form-label" for="form5Example21">Email address</label> -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://m.facebook.com/alice.lakyiere"
+            role="button"
+            ><i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://mobile.twitter.com/laky_al_ice"
+            role="button"
+            ><i class="bi bi-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/lakyiere/"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/lakyiere-alice-bagyiereyele-b73b731b0/"
+            role="button"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/Lakyiere"
+            role="button"
+            ><i class="bi bi-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="index.html">MeLakyiere</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="Modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <!-- <label class="form-label" for="form5Example21">Email address</label> -->
+              <input
+                type="email"
+                id="form5Example21"
+                placeholder="Email address"
+                class="form-control"
+              />
+              <br />
+              <input
+                type="password"
+                id="form5Example21"
+                placeholder="Password"
+                class="form-control"
+              />
+              <br />
+              <input
+                type="email"
+                id="form5Example21"
+                placeholder="Whatsapp Contact"
+                class="form-control"
+              />
+              <br />
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Comment</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Sumit</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
